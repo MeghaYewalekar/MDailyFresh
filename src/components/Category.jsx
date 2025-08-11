@@ -8,7 +8,7 @@ import Button from "./Button";
 const Category = () => {
   const renderCards = category.map((card) => {
     return (
-      <div className="flex-1 ">
+      <div className="flex-1" key={card.id}>
         {/* card image */}
         <div className=" w-full min-h-[30vh] relative -mb-10">
           <img src={card.image} className="absolute bottom-0"/>
@@ -33,8 +33,6 @@ const Category = () => {
         {/* Category Card */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-10  md:mt-15 ">{renderCards}</div>
 
-        {/* <Heading highlight="Our" heading="Values"/>
-      <Heading highlight="Our" heading="Products"/> */}
       </div>
     </section>
   );
