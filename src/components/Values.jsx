@@ -6,7 +6,7 @@ import Basket from "../../src/assets/basket-full-vegetables.png";
 const Values = () => {
   const LeftSide = value.slice(0,2).map((item) => {
     return (
-      <div className="flex md:flex-row-reverse items-center gap-7">
+      <div key={item.id} className="flex md:flex-row-reverse items-center gap-7">
         <div>
           <span className="flex justify-center items-center text-white text-3xl bg-gradient-to-b from-orange-400 to-orange-500 w-15 h-15 rounded-full ">{item.icon}</span>
         </div>
@@ -20,7 +20,7 @@ const Values = () => {
 
   const RightSide = value.slice(2).map((item) => {
     return (
-      <div className="flex items-center gap-7 ">
+      <div key={item.id} className="flex items-center gap-7 ">
         <div>
           <span className="flex justify-center items-center text-white text-3xl bg-gradient-to-b from-orange-400 to-orange-500 w-15 h-15 rounded-full ">{item.icon}</span>
         </div>
@@ -61,26 +61,26 @@ const value = [
   {
     id: 1,
     title: "Trust",
-    para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Consectetur rem ",
+    para: "We build lasting relationships with our customers by delivering quality you can rely on, every single time. ",
     icon: <FaHeart />,
   },
   {
     id: 2,
-    title: "always Fresh",
-    para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Consectetur rem ",
+    title: "Always Fresh",
+    para: "From farm to table, our products are handled with care to ensure you enjoy the freshest taste possible. ",
     icon: <FaLeaf />,
   },
   {
     id: 3,
     title: "Food Safety",
-    para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Consectetur rem ",
+    para: "We follow strict hygiene and safety standards to make sure every bite is safe and wholesome.",
     icon: <FaShieldAlt />,
   },
 
   {
     id: 4,
     title: "100% Organic",
-    para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Consectetur rem ",
+    para: "Our produce is grown naturally, free from harmful chemicals, so you get pure and healthy goodness. ",
     icon: <FaSeedling />,
   },
 ];
