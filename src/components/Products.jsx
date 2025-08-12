@@ -28,7 +28,7 @@ const Products = () => {
         <Heading highlight="Our" heading="Products" />
 
         {/* Tabs */}
-        <div className="flex gap-3 justify-center mt-8 rounded-lg">
+        <div className="flex flex-wrap gap-3 justify-center mt-8 rounded-lg">
           {categories.map((category) => {
             return (
               <button
@@ -47,7 +47,7 @@ const Products = () => {
           })}
         </div>
         {/* product listing */}
-        <div className="grid grid-cols-4 gap-9 mt-20">{renderCards}</div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-9 mt-20">{renderCards}</div>
 
         <div className="mt-15 mx-auto w-fit"><Button content="View All" /></div>
       </div>

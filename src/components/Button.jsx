@@ -2,7 +2,8 @@ import React from 'react'
 
 const Button = (props) => {
   return (
-    <button className='bg-gradient-to-b from-orange-400 to-orange-500 text-white px-8 py-3 rounded-lg rext-md md:text-lg hover:scale-105 hover:to-orange-600 transition-all duration-300 cursor-pointer'>{props.content}</button>
+    <button className='bg-gradient-to-b from-orange-400 to-orange-500 text-white px-2 py-2 md:px-8 md:py-3 rounded-lg t
+  ]ext-md md:text-lg hover:scale-105 hover:to-orange-600 transition-all duration-300 cursor-pointer'>{props.content}</button>
   )
 }
 
