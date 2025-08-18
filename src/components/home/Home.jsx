@@ -5,6 +5,7 @@ import Category from "../Category";
 import Values from "../Values";
 import Products from "../Products";
 import Discount from "../Discount";
+import Process from "../Process";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Values />
       <Products />
       <Discount />
+      <Process />
     </div>
   );
 };
