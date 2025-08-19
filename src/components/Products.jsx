@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Heading from "./Headings";
 import ProductList from "../components/ProductList";
 import Cards from "./Cards";
-import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const categories = ["All", "Fruits", "Vegetables", "Dairy", "SeaFood"];
 
@@ -49,7 +49,10 @@ const Products = () => {
         {/* product listing */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-9 mt-20">{renderCards}</div>
 
-        <div className="mt-15 mx-auto w-fit"><Button content="View All" /></div>
+        <div className="mt-15 mx-auto w-fit"><Link
+            to="/allproducts"
+            className="bg-gradient-to-b from-orange-400 to-orange-500 text-white px-2 py-2 md:px-8 md:py-3 rounded-lg text-md md:text-lg hover:scale-105 hover:to-orange-600 transition-all duration-300 cursor-pointer"> View All
+          </Link></div>
       </div>
     </section>
   );
